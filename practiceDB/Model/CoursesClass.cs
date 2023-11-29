@@ -1,7 +1,10 @@
-﻿namespace practiceDB.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace practiceDB.Model
 {
     public class CoursesClass
     {
+        [Key]
         public int CourseID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
