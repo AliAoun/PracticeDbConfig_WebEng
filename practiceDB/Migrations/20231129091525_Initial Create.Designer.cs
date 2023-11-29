@@ -11,8 +11,8 @@ using practiceDB.Data;
 namespace practiceDB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231129085357_init")]
-    partial class init
+    [Migration("20231129091525_Initial Create")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

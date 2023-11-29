@@ -16,6 +16,8 @@ namespace practiceDB.Data
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(Configuration.GetConnectionString("DbConnectionString"));
+            base.OnConfiguring(options);
+
         }
 
         public DbSet<TeacherClass> teachers { get; set; }
